@@ -1,23 +1,30 @@
-# jlame
+# jvorbis
 
-jlame library
+jvorbis library
+
+By https://gitlab.com/axet/
 
 Original port: by http://dmilvdv.narod.ru/Apps/oggvorbis.html
 
 Original code: https://www.xiph.org/vorbis/
 
-## Cetral Maven Repo
+## Maven Usage
 
 ```xml
-<dependency>
-  <groupId>com.github.axet</groupId>
-  <artifactId>jvorbis</artifactId>
-  <version>1.3.6</version>
-</dependency>
-```
+	<repositories>
+		<repository>
+			<id>consulo</id>
+			<url>https://maven.consulo.io/repository/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>interval:60</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
 
-## Android Studio
-
-```gradle
-    api 'com.github.axet:jvorbis:1.3.6'
+	<dependencies>
+		<groupId>consulo.internal.sound</groupId>
+		<artifactId>jogg</artifactId>
+		<version>2-SNAPSHOT</version>
+	</dependencies>
 ```

@@ -15,6 +15,6 @@ module jvorbis {
 
 	provides javax.sound.sampled.spi.AudioFileReader with com.github.axet.jvorbis.spi.file.OggVorbisAudioFileReader;
 	provides javax.sound.sampled.spi.AudioFileWriter with com.github.axet.jvorbis.spi.file.OggVorbisAudioFileWriter;
-	provides javax.sound.sampled.spi.FormatConversionProvider  with com.github.axet.jvorbis.spi.convert.OggVorbisFormatConversionProvider;
+	provides javax.sound.sampled.spi.FormatConversionProvider with com.github.axet.jvorbis.spi.convert.OggVorbisFormatConversionProvider;
 
 }

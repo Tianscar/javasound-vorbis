@@ -1,5 +1,5 @@
 # Java Implementation of Vorbis
-This is a fork of [JVorbis](https://github.com/soiaf/Java-Apple-Lossless-decoder), backport to Java 8.
+This is a fork of [JVorbis](https://github.com/consulo/jvorbis), backport to Java 8.
 
 This library is a Java port of the OGG Vorbis codec from xiph.org.
 

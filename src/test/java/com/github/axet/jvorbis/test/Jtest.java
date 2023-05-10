@@ -1,4 +1,4 @@
-package com.github.axet.jvorbis;
+package com.github.axet.jvorbis.test;
 
 import java.io.File;
 

@@ -1,4 +1,4 @@
-package com.github.axet.jvorbis.examples;
+package com.github.axet.jvorbis.cli;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

@@ -1,30 +1,33 @@
-# jvorbis
+# Java Implementation of Vorbis
+This is a fork of [JVorbis](https://github.com/soiaf/Java-Apple-Lossless-decoder), backport to Java 8.
 
-jvorbis library
-
-By https://gitlab.com/axet/
+This library is a Java port of the OGG Vorbis codec from xiph.org.
 
 Original port: by http://dmilvdv.narod.ru/Apps/oggvorbis.html
-
 Original code: https://www.xiph.org/vorbis/
 
-## Maven Usage
-
-```xml
-	<repositories>
-		<repository>
-			<id>consulo</id>
-			<url>https://maven.consulo.io/repository/snapshots/</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>interval:60</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
-
-	<dependencies>
-		<groupId>consulo.internal.sound</groupId>
-		<artifactId>jogg</artifactId>
-		<version>2-SNAPSHOT</version>
-	</dependencies>
+## Add the library to your project (gradle)
+1. Add the Maven Central repository (if not exist) to your build file:
+```groovy
+repositories {
+    ...
+    mavenCentral()
+}
 ```
+
+2. Add the dependency:
+```groovy
+dependencies {
+    ...
+    implementation 'com.tianscar.javasound:javasound-vorbis:2.0.0'
+}
+```
+
+## Usage
+[Tests and Examples](/src/test/java/com/github/jvorbis/test)  
+[Command-line interfaces](/src/test/com/github/jvorbis/cli)
+
+Note you need to download test audios [here](https://github.com/Tianscar/fbodemo1) and put them to /src/test/java/resources to run the test code properly!
+
+## License
+[LGPL-2.0](/LICENSE)

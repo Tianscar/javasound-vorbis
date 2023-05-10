@@ -1,4 +1,4 @@
-package com.github.axet.jvorbis.examples;
+package com.github.axet.jvorbis.cli;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -79,7 +79,7 @@ public final class Jseeking_example {
 								f.printf("%d %d\n", j, (int)buffer[j] );
 							}
 							f.close();
-							f = new PrintStream("b.m", "w");
+							f = new PrintStream("b.m");
 							for( j = -4096; j < bread + 4096; j++ ) {
 								if( j + (int)((pos << 1) >> hs) >= 0 && (j + (int)((pos << 1) >> hs)) < ((int)(pcmlength >> hs) << 1) ) {
 									f.printf("%d %d\n", j, (int)bigassbuffer[j + (int)((pos << 1) >> hs)]);

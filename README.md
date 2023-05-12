@@ -1,7 +1,7 @@
 # Java Implementation of Vorbis
 This is a fork of [JVorbis](https://github.com/consulo/jvorbis), backport to Java 8.
 
-This library is a Java port of the OGG Vorbis codec from xiph.org.
+This library is a Java port of the Ogg Vorbis codec from xiph.org.
 
 Original port: by http://dmilvdv.narod.ru/Apps/oggvorbis.html
 Original code: https://www.xiph.org/vorbis/

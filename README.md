@@ -25,7 +25,7 @@ dependencies {
 
 ## Usage
 [Tests and Examples](/src/test/java/com/github/jvorbis/test)  
-[Command-line interfaces](/src/test/com/github/jvorbis/cli)
+[Command-line interfaces](/src/test/java/com/github/jvorbis/cli)
 
 Note you need to download test audios [here](https://github.com/Tianscar/fbodemo1) and put them to /src/test/resources to run the test code properly!
 

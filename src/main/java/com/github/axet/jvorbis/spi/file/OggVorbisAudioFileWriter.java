@@ -19,25 +19,27 @@ import com.github.axet.libogg.Jogg_packet;
 import com.github.axet.libogg.Jogg_page;
 import com.github.axet.libogg.Jogg_stream_state;
 
+import static com.github.axet.jvorbis.spi.file.OggVorbisAudioFileFormatType.OGG_VORBIS;
+
 //TODO what must return getSourceEncodings(), getAudioFileTypes() ?
 public final class OggVorbisAudioFileWriter extends AudioFileWriter {
-	private final Type[] OGGVORBIS = { new Type("OggVorbis", "ogg") };
+
 	private static final float QUALITY = 1.0f;
 
 	@Override
 	public Type[] getAudioFileTypes() {
-		return OGGVORBIS;
+		return new Type[] { OGG_VORBIS };
 	}
 
 	@Override
 	public Type[] getAudioFileTypes(final AudioInputStream stream) {
-		return OGGVORBIS;
+		return new Type[] { OGG_VORBIS };
 	}
 
 	@Override
 	public int write(final AudioInputStream stream, final Type fileType, final OutputStream out)
 			throws IOException {
-		if( ! fileType.equals( OGGVORBIS[0] ) ) {
+		if( ! fileType.equals( OGG_VORBIS ) ) {
 			throw new IllegalArgumentException();
 		}
 
@@ -198,7 +200,7 @@ public final class OggVorbisAudioFileWriter extends AudioFileWriter {
 
 	@Override
 	public int write(final AudioInputStream stream, final Type fileType, final File file) throws IOException {
-		if( ! fileType.equals( OGGVORBIS[0] ) ) {
+		if( ! fileType.equals( OGG_VORBIS ) ) {
 			throw new IllegalArgumentException();
 		}
 		FileOutputStream outs = null;

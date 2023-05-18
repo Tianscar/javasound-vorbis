@@ -28,6 +28,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.gagravarr:vorbis-java-core:0.8'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
@@ -56,6 +58,10 @@ publishing {
                     license {
                         name = 'GNU Library or Lesser General Public License, Version 2.0'
                         url = 'http://www.gnu.org/licenses/old-licenses/lgpl-2.0.txt'
+                    }
+                    license {
+                        name = 'Xiph.Org Variant of the BSD License'
+                        url = 'https://www.xiph.org/licenses/bsd/'
                     }
                 }
                 developers {

@@ -30,7 +30,7 @@ dependencies {
 Note you need to download test audios [here](https://github.com/Tianscar/fbodemo1) and put them to /src/test/resources to run the test code properly!
 
 ## License
-[LGPL-2.0](/LICENSE.LGPLv2)  
+[LGPL-2.0](/LICENSE.LGPL-2.0)  
 [Xiph.Org Variant of the BSD License](/LICENSE.Xiph)
 
 ### Dependencies

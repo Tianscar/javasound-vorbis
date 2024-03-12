@@ -6,12 +6,12 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.File;
 import java.io.IOException;
 
-public class VorbisDurationExample {
+public class Jspi_duration {
 
     public static void main(String[] args) {
         try {
-            AudioFileFormat fileFormat = AudioSystem.getAudioFileFormat(new File("src/test/resources/fbodemo1_vorbis.ogg"));
-            System.out.println("Ogg Vorbis audio duration: " + (long) fileFormat.properties().get("duration") / 1_000_000.0);
+            AudioFileFormat fileFormat = AudioSystem.getAudioFileFormat(new File("src/test/resources/fbodemo1_vorbis.ogg").toURI().toURL());
+            System.out.println("Ogg Vorbis audio file duration: " + (long) fileFormat.properties().get("duration") / 1_000_000.0);
         } catch (IOException | UnsupportedAudioFileException e) {
             throw new RuntimeException(e);
         }

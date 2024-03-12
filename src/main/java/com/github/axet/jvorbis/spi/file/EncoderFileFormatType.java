@@ -27,7 +27,6 @@ public final class EncoderFileFormatType extends AudioFileFormat.Type {
 	 * @param streamType stream type: vbr, cbr or abr.
 	 * @param parameter a parameter of the stream type.
 	 */
-
 	public EncoderFileFormatType(final String name, final String extension, final int streamType, final float parameter) {
 		super( name, extension );
 		mStreamType = streamType;

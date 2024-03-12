@@ -9,8 +9,8 @@ ext {
     libraryGroupName = 'com.tianscar.javasound'
     libraryVendorName = 'Tianscar'
 
-    libraryVersionCode = 1
-    libraryVersionName = '2.0.0'
+    libraryVersionCode = 11
+    libraryVersionName = '2.1.0'
 
     librarySourceCompatibility = JavaVersion.VERSION_1_8
     libraryTargetCompatibility = JavaVersion.VERSION_1_8
@@ -28,8 +28,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.gagravarr:vorbis-java-core:0.8'
-
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }

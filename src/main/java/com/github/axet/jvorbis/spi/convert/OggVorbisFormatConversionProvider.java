@@ -8,7 +8,7 @@ import javax.sound.sampled.spi.FormatConversionProvider;
 
 // TODO what must return getSourceEncodings(), getTargetEncodings ?
 public final class OggVorbisFormatConversionProvider extends FormatConversionProvider {
-	public static final AudioFormat.Encoding ENCODING = new AudioFormat.Encoding("OggVorbis");
+	public static final Encoding ENCODING = new Encoding("OggVorbis");
 
 	@Override
 	public Encoding[] getSourceEncodings() {

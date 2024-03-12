@@ -19,7 +19,7 @@ repositories {
 ```groovy
 dependencies {
     ...
-    implementation 'com.tianscar.javasound:javasound-vorbis:2.0.0'
+    implementation 'com.tianscar.javasound:javasound-vorbis:2.1.0'
 }
 ```
 
@@ -32,8 +32,3 @@ Note you need to download test audios [here](https://github.com/Tianscar/fbodemo
 ## License
 [LGPL-2.0](/LICENSE.LGPL-2.0)  
 [Xiph.Org Variant of the BSD License](/LICENSE.Xiph)
-
-### Dependencies
-| Library                                                                      | License    | Comptime | Runtime |
-|------------------------------------------------------------------------------|------------|----------|---------|
-| [VorbisJava](https://github.com/Gagravarr/VorbisJava)                        | Apache-2.0 | Yes      | Yes     |

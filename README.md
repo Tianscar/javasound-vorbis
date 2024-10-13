@@ -1,3 +1,5 @@
+WARNING: THIS PROJECT IS NO LONGER MAINTAINED. MOVED TO: https://github.com/jseproject/jse-spi
+
 # Java Implementation of Vorbis
 This is a fork of [JVorbis](https://github.com/consulo/jvorbis), backported to Java 8.
 
